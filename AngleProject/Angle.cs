@@ -222,6 +222,14 @@ namespace AngleProject
                 return false;
         }
 
+        public static Angle Scalar(Angle myAngle, int scalar)
+        {
+            myAngle._degree *= scalar;
+            myAngle._minute *= scalar;
+            myAngle._second *= scalar;
+
+           return Angle.NormilizeAngle(myAngle);
+        }
        
 
         public override string ToString()

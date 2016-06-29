@@ -87,7 +87,9 @@ namespace AngleProject
             Console.WriteLine("\nConvert: " + longAngle.ToString());
             Console.WriteLine("Result: " + Angle.NormilizeAngle(longAngle));
 
-
+            Angle scalar = new Angle(20, 34, 45);
+            Angle.Scalar(scalar, 3);
+            Console.WriteLine(scalar.ToString());
 
 
 
